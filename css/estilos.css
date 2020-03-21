@@ -1,0 +1,470 @@
+*, ::after, :before{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    --webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif
+}
+
+.contenedor{
+     padding: 80px 0;
+     max-width: 10000px;
+     width: 90%;
+     margin: auto;
+     overflow: hidden;
+}
+
+header{
+    margin: auto;
+    width: 100%;
+    position: relative;
+    background-image: url("../Imagenes/El-papagayo.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 650px;
+}
+
+/* MENU */
+
+nav{
+    width: 100%;
+    background: rgba(0, 36, 41, 0.438);
+    position: fixed;
+    height: 50px;
+}
+
+ul{
+    list-style: none;
+    float: right;
+}
+
+.Menu > a{
+    display: inline-block;
+    color: #ffffff;
+    background: rgb(5, 116, 20);
+    border-radius: 60px;
+    text-decoration: none;
+    font-size: 15px;
+    width: 130px;
+    height: 30px;
+    padding: 4px;   
+    margin-top: 10px;
+    text-align: center;
+    float: inline-end;
+    transition: .6s;
+}
+.Menu .logo{
+    height: 30px
+}
+.Menu > a:hover{
+    transform: scale(1.2);
+    color: whitesmoke;
+    text-decoration: none;
+
+}
+
+.Menu > li{
+	position: relative;
+    display: inline-block;
+    justify-content: center;
+    align-content: center;
+    
+}
+.Menu > li > a{
+	display: block;
+	padding: 15px 20px;
+	color: #fffdfd;
+	text-decoration: none;
+}
+
+.Menu li a:hover{
+	color: #CE7D35;
+	transition: all .3s;
+}
+
+/* Submenu*/
+
+.submenu {
+	position: absolute;
+    background: rgba(0, 36, 41, 0.438);
+    width: 130%;
+    display: none;
+}
+
+.submenu li a{
+	display: block;
+	padding: 15px;
+	color: #fff;
+	text-decoration: none;
+}
+
+.Menu li:hover .submenu{
+    display: block;
+}
+
+/* Estilo del header */
+
+.contenido_header{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    width: 90%;
+    height: 500px;
+    margin: auto;
+    color: #ffffff;
+    overflow: hidden;
+}
+
+.contenido_header .Textos{
+    width: 50%;
+}
+
+.contenido_header .Textos h1{
+    margin-bottom: 10px;
+    font-size: 50px;
+    font-style: oblique;
+    color: rgb(238, 238, 238);
+    text-shadow: 0px 5px rgba(0, 0, 0, 0.61);
+}
+
+.contenido_header .Textos p{
+    margin-bottom: 20px;
+    font-size: 18px;
+    width: 72%;
+    color: rgb(238, 238, 238);
+}
+
+.Textos > a{
+    display: inline-block;
+    color: #ffffff;
+    background: rgb(255, 18, 1);
+    border-radius: 40px;
+    text-decoration: none;
+    font-size: 15px;
+    padding: 5px 2px;
+    width: 120px;
+    text-align: center;
+}
+
+.wave-bottom{    
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    width: 100%;
+}
+
+/* ITINERARIO */
+
+.Itinerarios h3{
+    font-size: 35px;
+    color: black;
+    margin-bottom: 0px;
+}
+
+.Itinerarios h2{
+    font-size: 60px;
+    color: black;
+}
+
+.Contenedor_itinerario{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    flex-wrap: wrap;
+    height: auto;
+}
+
+.Paquete{
+    background: white;
+    width: 33%;
+    border-radius: 3px;
+    padding: 20px 10px;
+    margin-top: 10px;
+    overflow: hidden;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.068);
+}
+
+.Paquete img{
+    margin-bottom: 20px;
+    object-fit: cover;
+    width: 100%;
+    height: 500px;
+    vertical-align: top;
+    transition: transform .6s;
+}
+
+.Paquete img:hover{
+    transform: scale(1.2);
+}
+
+.Ver_mas1{
+    display: inline-block;
+    color: #ffffff;
+    background: rgb(255, 18, 1);
+    border-radius: 40px;
+    text-decoration: none;
+    font-size: 15px;
+    padding: 5px 2px;
+    width: 120px;
+    text-align: center;
+}
+
+/* ACTIVIDADES */
+
+.Actividades{
+    margin: auto;
+    width: 100%;
+    background-image: url("../Imagenes/Nicaragua.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-attachment: fixed;
+    height: 600px;
+}
+
+.Act_Nic{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 90%;
+    height: 500px;
+    margin: auto;
+    color: #ffffff;
+    overflow: hidden;
+}
+.Act_Nic .Act_texto{
+    width: 40%;   
+}
+
+.Act_Nic .Act_texto h3{
+    text-align: end;
+    margin-bottom: 0;
+    text-shadow: rgba(0, 0, 0, 0.705);
+}
+
+.Act_Nic .Act_texto h1{
+    text-align: end;
+    font-size: 60px;
+    text-shadow: rgba(0, 0, 0, 0.705);
+}
+
+.Act_Nic .Act_texto p{
+    text-align: end;
+    color: white;
+}
+
+.Act_texto > a{
+        display: inline-block;
+        color: #ffffff;
+        background: rgb(1, 196, 255);
+        border-radius: 40px;
+        text-decoration: none;
+        font-size: 15px;
+        padding: 5px 2px;
+        width: 120px;
+        text-align: center;
+        float: right;
+}
+
+/* TOP TOURS */
+
+.Top{
+    width: 100%;  
+    padding: 50px;
+    margin-bottom: 20px;  
+}
+
+.Top h3{
+    text-align: start;
+    margin-bottom: 0;
+    text-shadow: rgb(0, 0, 0);
+    font-size: 40px;
+    color: rgb(1, 196, 255);
+    margin-left: 40px;
+}
+
+.Top > h4{
+    text-align: start;
+    margin-bottom: 40px;
+    text-shadow: rgba(0, 0, 0, 0.705);
+    font-size: 40px;
+    color: rgb(1, 57, 94);
+    margin-left: 40px;
+}
+
+.container{
+    height: auto;
+    justify-content: space-around;
+    text-align: center;
+    box-shadow: 5px 5px 5px 10px rgba(31, 55, 100, 0.068);
+   
+}
+
+.container .row{
+    padding: 5px 5px;
+    overflow: hidden;
+}
+
+.container .row .col-lg-7 img{
+    object-fit: cover;
+    width: 100%;
+    height: 400px;
+    transition: transform .6s;
+}
+
+.container .row .col-lg-7 img:hover{
+    transform: scale(1.05);
+}
+
+.row{
+    align-items: center;
+    text-align: start;
+}
+
+.row p{
+    text-align: start;
+    margin-bottom: 20px;
+}
+
+.row h4{
+    text-align: start;
+    margin-bottom: 10px;
+    color: rgb(49, 95, 133);
+    font-size: 30px;
+}
+
+.col-lg h1{
+    font-size: 110px;
+    text-align: center;
+    justify-content: center;
+    
+}
+
+/* TRANSPORTE */
+
+.Transporte{
+    background-color: #f2f2f2;
+    display: inline-block;
+    align-items: center;
+}
+
+.Transporte img{
+    width: 60%;
+    display: inline-block;
+    padding: 50px 10px 50px 10px;
+}
+
+.tabla{
+    width: 32%;
+    display: inline-block;   
+}
+
+.tabla p{
+    text-align: end;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+}
+
+.tabla h2{
+    text-align: end;
+    margin-bottom: 20px;
+    font-size: 65px;
+    color: steelblue;
+}
+
+/* SOCIAL */
+
+footer{
+    background-image: url("../Imagenes/wood.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    padding: 0px;
+    align-content: center;
+    text-align: center;
+    
+}
+
+.Redes{
+    margin-bottom: 20px;
+    margin-top: 40px;
+}
+.Redes a{
+    display: inline-block;
+
+}
+
+.Redes h1{
+    text-align: right;
+    color: #f2f2ff;
+    font: italic;
+    font-size: 60px;
+    font-family: Tahoma;
+    margin-top: 25px ;
+}
+
+.Redes a{
+    font-size: 50px;
+    margin-left: 20px;
+    color: #ffffff;
+    background: rgb(5, 116, 20);
+    border-radius: 80px;
+    text-decoration: none;
+    font-size: 30px;
+    width: 60px;
+    text-align: center;
+    transition: .6s;  
+}   
+
+.Redes a:hover{
+    transform: scale(1.5);
+    color: rgb(167, 242, 250);
+    text-decoration: none;
+}
+
+footer p{
+    color: rgb(223, 220, 255);
+    margin-bottom: 0px;
+}
+
+footer h1{
+    color: teal;
+    margin-bottom: 30px;
+}
+footer img{
+    height: 90px;
+}
+
+.footer a{
+    display: inline-block;
+    color: #ffffff;
+    background: rgb(5, 116, 20);
+    border-radius: 60px;
+    text-decoration: none;
+    font-size: 15px;
+    width: 160px;
+    height: 30px;
+    padding: 4px;
+    margin-top: 10px;
+    margin-bottom: 6px;
+    transition: .5s;
+}
+
+.footer a:hover{
+    transform: scale(1.2);
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+.info{
+    margin-bottom: 20px;
+}
+
+.btn-group{
+    width: 100%;
+    position: absolute;
+}
+
